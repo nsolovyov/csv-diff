@@ -6,17 +6,17 @@
 ## Project Setup
 
 ```sh
-yarn
+npm install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-yarn dev
+npm run dev
 ```
 
 ### Compile and Minify for Production
 
 ```sh
-yarn build
+npm run build
 ```

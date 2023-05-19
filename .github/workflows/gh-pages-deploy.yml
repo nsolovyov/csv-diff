@@ -18,13 +18,10 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
 
-      - name: Install yarn
-        run: npm i -g yarn
-
       - name: Install dependencies
-        run: yarn
+        run: npm ci
 
       - uses: actions/checkout@v3
       - uses: fregante/setup-git-user@v2
       - name: Run deploy script
-        run: yarn gh-pages-deploy
+        run: npm run gh-pages-deploy
