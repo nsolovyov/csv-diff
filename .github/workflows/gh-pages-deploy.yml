@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - master
+
+permissions: read-all|write-all
+
 jobs:
   gh-pages-deploy:
     name: Deploying to gh-pages
@@ -17,11 +20,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Debug Info
-        run: |
-          ls -hal ./node_modules
-          cat package.json
 
       - uses: fregante/setup-git-user@v2
       - name: Run deploy script
