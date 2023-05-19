@@ -9,16 +9,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js for use with actions
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          version:  12.x
+          version:  19.x
       - name: Checkout branch
         uses: actions/checkout@v2
 
-      - name: Clean install dependencies
-        run: npm ci
+      - name: Install yarn
+        run: npm i -g yarn
+
+      - name: Install dependencies
+        run: yarn
 
       - uses: actions/checkout@v3
       - uses: fregante/setup-git-user@v2
       - name: Run deploy script
-        run: npm run gh-pages-deploy
+        run: yarn gh-pages-deploy
