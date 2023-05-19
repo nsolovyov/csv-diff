@@ -4,8 +4,7 @@ on:
     branches:
       - master
 
-permissions:
-  actions: write
+permissions: write-all
 
 jobs:
   gh-pages-deploy:
