@@ -8,6 +8,7 @@
     "preview": "vite preview",
     "gh-pages-deploy": "node scripts/gh-pages-deploy.js"
   },
+  "type": "module",
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
     "@vue/reactivity": "^3.3.2",
