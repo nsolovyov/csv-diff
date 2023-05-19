@@ -1,6 +1,6 @@
 # Small tool for to compare CSV files
 
-[nsolovyov.github.io/csv-diff/](nsolovyov.github.io/csv-diff/)
+[https://nsolovyov.github.io/csv-diff/](https://nsolovyov.github.io/csv-diff/)
 
 
 ## Project Setup
