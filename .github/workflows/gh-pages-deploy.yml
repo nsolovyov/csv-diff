@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - master
+
+permissions: write-all
+
 jobs:
   gh-pages-deploy:
     name: Deploying to gh-pages
@@ -11,14 +14,13 @@ jobs:
       - name: Setup Node.js for use with actions
         uses: actions/setup-node@v3
         with:
-          version:  19.x
+          node-version:  19
       - name: Checkout branch
         uses: actions/checkout@v3
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
-      - uses: actions/checkout@v3
       - uses: fregante/setup-git-user@v2
       - name: Run deploy script
         run: npm run gh-pages-deploy
