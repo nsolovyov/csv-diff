@@ -1,4 +1,4 @@
-# Small tool for to compare CSV files
+# Small tool for comparing CSV files
 
 [https://nsolovyov.github.io/csv-diff/](https://nsolovyov.github.io/csv-diff/)
 
